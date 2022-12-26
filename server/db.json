@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "question": "Do you have a family history of breast cancer?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 2,
+        "question": "Has your doctor ever told you that yourbreast tissue id dense?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 3,
+        "question": "Do you drink alcohol?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 4,
+        "question": "Do you exercise regularly?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 5,
+        "question": "Is your BMI in range for your height?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 6,
+        "question": "Have you ever breastfed?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 7,
+        "question": "Has anyone in your family had genetic mutations which affect breast cancer?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 8,
+        "question": "Are you over the age of 50?",
+        "answers": ["Yes", "No"]
+    },
+
+    {
+        "id": 9,
+        "question": "Are you taking any medication that affects your hormones?",
+        "answers": ["Yes", "No"] 
+    }
+]
