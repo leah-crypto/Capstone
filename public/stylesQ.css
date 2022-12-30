@@ -45,7 +45,7 @@ body{
 }
 body {
   height: 100vh;
-  background: linear-gradient(184deg,#ffaff6,#e22dbe);
+  background: linear-gradient(184deg,#FABBBB,#FFE7F1);
 }
 .start-screen,
 .score-container {
@@ -93,7 +93,7 @@ button {
   padding-bottom: 0.6em;
   border-bottom: 0.1em solid #c0bfd2;
 }
-/* .timer-div {
+.timer-div {
   background-color: #e1f5fe;
   width: 7.5em;
   border-radius: 1.8em;
@@ -101,7 +101,7 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0.7em 1.8em;
-} */
+}
 .question {
   margin-bottom: 1.25em;
   font-weight: 600;
@@ -148,3 +148,4 @@ button {
   font-size: 1.5em;
   color: #ffffff;
 }
+

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background-color: #FFE4E1;
+}
+
+header{
+    background-color: #FFB6C1;
+
+}
+
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #FFB6C1;
+}
+
+.nav button{
+    font-family: inherit;
+}
+
+.create-box{
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    margin-top:10px;
+    border-radius: 5px;
+    background-color: #FFB6C1;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.create-box textarea{
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid #cca1b3;
+}
+
+.create-box button{
+    width: fit-content;
+}
+
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.cards{
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.card h2{
+    font-size: 1rem;
+}
+
+/*this is the start of resources*/
+
+#resourcesBtn{
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    margin-top:10px;
+    border-radius: 5px;
+    background-color: #FFB6C1;
+    position: relative;
+    left: 650px;
+}
+
+.nav2 button{
+    position: relative;
+    left: 1700px;
+}
+
+#headR{
+    position: relative;
+    left: 870px
+}

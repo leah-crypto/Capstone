@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="doctors.css">
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class = "nav">
+                <h1>Save your Doctors Info</h1>
+            </div>
+            <button id ="new-card">"New Entry</button>
+            <button id ="del-card">Delete Entry</button>
+        </div>
+    </header>
+   
+   <div class="container"> /*input container*/
+    <div class="create-box">
+        <h2 style="text-align: center; color: black">Add a Doctor</h2>
+        <label for="name">Doctors Name</label>
+        <textarea id ="name"></textarea>
+        <br>
+        <label for="phone">Doctors Phone Number</label>
+        <textarea id ="phone"></textarea>
+        <br>
+        <label for="appoimentDate">Appoiment Date</label>
+        <textarea id ="date"></textarea>
+        
+        <div>
+            <br>
+            <button>Save</button>
+            <button>Exit</button>
+            
+        </div>
+   </div>
+   <div class="cards"></div>
+   
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/doctors.js"></script>
+  </body>
+</html>

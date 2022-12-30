@@ -1,14 +1,17 @@
 [
     {
         "id": 1,
-        "question": "Do you have a family history of breast cancer?",
-        "answers": ["Yes", "No"]
+        "question": "At what age should people begin getting mammograms?",
+        "answers": ["30", "50", "65", "20"],
+        "correct": ["50"]
     },
 
     {
         "id": 2,
-        "question": "Has your doctor ever told you that yourbreast tissue id dense?",
-        "answers": ["Yes", "No"]
+        "question": "What is one thing that people can do to help imporve their risk for breast cancer?",
+        "answers": ["breastfeed", "drink more water", "run a mile", "ride in a car"],
+        "correct": ["breastfeed"]
+        
     },
 
     {

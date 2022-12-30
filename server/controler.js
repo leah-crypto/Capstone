@@ -1,7 +1,7 @@
 //require("dotenv").config();
 // const sequlize = require("sequelize");
 const quizArray = require("../db.json");
-// require("dotenv").config();
+
 
 // const { CONNECTION_URI } = process.env;
 // const Sequelize = require("sequelize");
@@ -29,4 +29,5 @@ module.exports = {
     
         res.status(200).send(quizArray);
       }
+      
 }

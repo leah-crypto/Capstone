@@ -6,14 +6,15 @@ const bodyParse = require("body-parser")
 
 const {
     seed,
-    getQuestions
-} = require("./controler/controler");
+    getQuestions,
+} = require("./controler");
 
 app.use(cors());
 app.use(express.json())
 // app.post('/seed', seed);
 
 app.get(`/api/quiz`, getQuestions);
+//app.post(`/api/quiz`, postQuestions);
 
 
 
