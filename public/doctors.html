@@ -14,13 +14,15 @@
             <div class = "nav">
                 <h1>Save your Doctors Info</h1>
             </div>
-            <button id ="new-card">"New Entry</button>
-            <button id ="del-card">Delete Entry</button>
+            <button><a href = "./resources.html">Resources</a></button>
+            <button><a href = "./quiz.html">Quiz<a/></button>
         </div>
     </header>
-   
-   <div class="container"> /*input container*/
+    <!-- <button id ="new-card">"New Entry</button>
+    <button id ="del-card">Delete Entry</button> -->
+   <div class="container"> 
     <div class="create-box">
+      <form>
         <h2 style="text-align: center; color: black">Add a Doctor</h2>
         <label for="name">Doctors Name</label>
         <textarea id ="name"></textarea>
@@ -30,11 +32,11 @@
         <br>
         <label for="appoimentDate">Appoiment Date</label>
         <textarea id ="date"></textarea>
-        
+      </form>
         <div>
             <br>
-            <button>Save</button>
-            <button>Exit</button>
+            <button id="addCard">Save</button>
+            <button id="delCard">Exit</button>
             
         </div>
    </div>

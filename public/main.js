@@ -9,4 +9,4 @@ const startBtn = document.querySelector()
 
 
 
-
+//"test": "echo \"Error: no test specified\" && exit 1"

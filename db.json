@@ -2,14 +2,14 @@
     {
         "id": 1,
         "question": "At what age should people begin getting mammograms?",
-        "answers": ["30", "50", "65", "20"],
+        "options": ["30", "50", "65", "20"],
         "correct": ["50"]
     },
 
     {
         "id": 2,
         "question": "What is one thing that people can do to help imporve their risk for breast cancer?",
-        "answers": ["breastfeed", "drink more water", "run a mile", "ride in a car"],
+        "options": ["breastfeed", "drink more water", "run a mile", "ride in a car"],
         "correct": ["breastfeed"]
         
     },
@@ -17,42 +17,43 @@
     {
         "id": 3,
         "question": "Do you drink alcohol?",
-        "answers": ["Yes", "No"]
+        "options": ["Yes", "No"]
     },
 
     {
         "id": 4,
         "question": "Do you exercise regularly?",
-        "answers": ["Yes", "No"]
+        "options": ["Yes", "No"]
     },
 
     {
         "id": 5,
         "question": "Is your BMI in range for your height?",
-        "answers": ["Yes", "No"]
+        "options": ["Yes", "No"]
     },
 
     {
         "id": 6,
         "question": "Have you ever breastfed?",
-        "answers": ["Yes", "No"]
+        "options": ["Yes", "No"]
     },
 
     {
         "id": 7,
         "question": "Has anyone in your family had genetic mutations which affect breast cancer?",
-        "answers": ["Yes", "No"]
+        "options": ["Yes", "No"]
     },
 
     {
         "id": 8,
         "question": "Are you over the age of 50?",
-        "answers": ["Yes", "No"]
+        "options": ["Yes", "No"]
     },
 
     {
         "id": 9,
         "question": "Are you taking any medication that affects your hormones?",
-        "answers": ["Yes", "No"] 
+        "options": ["Yes", "No"] 
     }
 ]
+
