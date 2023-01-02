@@ -3,8 +3,11 @@ const baseUrl = "http://localhost:4000";
 
 let resourcesArray;
 
-
-
+resourcesBtn.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  initial();
+});
 
 const getResources = () => {
     axios.get(`${baseUrl}/api/resources`).then((res) => {
@@ -15,4 +18,4 @@ const getResources = () => {
 
 
 
-resourcesBtn.addWEvenListener("click", getResources);
+resourcesBtn.addEvenListener("click", getResources);

@@ -1,7 +1,8 @@
 //require("dotenv").config();
 // const sequlize = require("sequelize");
 const quizArray = require("../db.json");
-
+const drsArray = require("../dbDoctors.json");
+const resourcesArray = require("../dbResources.json");
 
 // const { CONNECTION_URI } = process.env;
 // const Sequelize = require("sequelize");
@@ -12,7 +13,7 @@ const quizArray = require("../db.json");
 //     ssl: {
 //       rejectUnauthorized: false,
 //     },
-//   },
+//   }, 
 // });
 
 
@@ -25,5 +26,19 @@ module.exports = {
         res.status(200).send(quizArray);
       },
 
+      getDoctorCards: (req, res) => {
+        console.log(drsArray);
+        res.status(200).send(drsArray);
+      },
+
+      postDoctors: (req, res) => {
+        const post = req.body;
+        res.status(200).send(post)
+      },
+
+      getResources: (req, res) => {
+        console.log(resourcesArray);
+        res.status(200).send(drsArray);
+      }
           
 }

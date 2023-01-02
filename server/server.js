@@ -23,6 +23,9 @@ const users = []
 const {
     seed,
     getQuestions,
+    getDoctorCards,
+    getResources,
+    postDoctors
 } = require("./controler");
 
 // const passport = require('passport')
@@ -51,8 +54,12 @@ app.get('/register', checkNotAuthenticated, (req, res) => {
 app.get('/', checkAuthenticated, (req, res) =>{
     res.render('index.ejs', { name: req.user.name })
 })
+
 app.get(`/api/quiz`, getQuestions);
-//app.post(`/api/quiz`, postQuestions);
+app.get(`/api/doctors`, getDoctorCards);
+app.get(`/api/resources`, getResources);
+app.post(`/api/doctors`, postDoctors);
+
 
 app.post('/register',checkNotAuthenticated, async (req, res) =>{
     try{
@@ -81,6 +88,11 @@ app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     failureRedirect: '/login',
     failureFlash: true
 }))
+
+// app.post('/api/doctors', (req, res) =>  {
+//     console.log(req.body);
+//     res.status(201).send("Created Doctors Card");
+// });
 
 function checkAuthenticated(req, res, next){
     if(req.isAuthenticated()){
