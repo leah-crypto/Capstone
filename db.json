@@ -9,51 +9,58 @@
     {
         "id": 2,
         "question": "What is one thing that people can do to help imporve their risk for breast cancer?",
-        "options": ["breastfeed", "drink more water", "run a mile", "ride in a car"],
-        "correct": ["breastfeed"]
+        "options": ["keep a healthy weight", "drink more water", "run a mile", "ride in a car"],
+        "correct": ["keep a healthy weight"]
         
     },
 
     {
         "id": 3,
-        "question": "Do you drink alcohol?",
-        "options": ["Yes", "No"]
+        "question": "What are genetic mutations?",
+        "options": ["Changes/deletions within your genes", "Something from X-men", "Something that everyone has", "A illness you can only get from your mother"],
+        "correct": ["Changes/deletions within your genes"]
     },
 
     {
         "id": 4,
-        "question": "Do you exercise regularly?",
-        "options": ["Yes", "No"]
+        "question": "Who can get breast cancer?",
+        "options": ["Only women", "men", "Women and men", "Breast cancer can happen to anyone"],
+        "correct": ["Breast cancer can happen to anyone"]
     },
 
     {
         "id": 5,
-        "question": "Is your BMI in range for your height?",
-        "options": ["Yes", "No"]
+        "question": "Can family history affect breast cancer risks?",
+        "options": ["Yes", "No", "Maybe", "I dont know"],
+        "correct": ["Yes"]
     },
 
     {
         "id": 6,
-        "question": "Have you ever breastfed?",
-        "options": ["Yes", "No"]
+        "question": "How can breastfeeding affect your risk?",
+        "options": ["It can make it worse", "There is no link between breast feeding and breast cancer", "Every 6 months of breastfeeding helps to improve your chances of avoiding breastcancer", "It has been found to cure breast cancer"],
+        "correct": ["Every 6 months of breastfeeding helps to improve your chances of avoiding breastcancer"]
     },
 
     {
         "id": 7,
-        "question": "Has anyone in your family had genetic mutations which affect breast cancer?",
-        "options": ["Yes", "No"]
+        "question": "How can reproductive history affect your risk?",
+        "options": ["It dosent", "Through hormonal changes at certian ages for longer periods of time", "It can only affect you once you turn 18", "It can only affect you once you turn 50"],
+        "correct": ["Through hormaonal changes at certian ages for longer periods of time"]
     },
 
     {
         "id": 8,
-        "question": "Are you over the age of 50?",
-        "options": ["Yes", "No"]
+        "question": "Can taking certian medications raise your risk for breastcancer?",
+        "options": ["Yes, there are mutipule medications", "No, none can", "Yes but only birthcontrol", "Yes, but only estrogen"],
+        "correct": ["Yes, there are mutipule medications"]
     },
 
     {
         "id": 9,
-        "question": "Are you taking any medication that affects your hormones?",
-        "options": ["Yes", "No"] 
+        "question": "Dose drinking alcohol affect yur risk?",
+        "options": ["Yes, the more consumed he higher the risk", "No, no affect", "Only if beast cancer runs in your family", "Only if your 30 or above"],
+        "correct": ["Yes, the more consumed he higher the risk"]
     }
 ]
 

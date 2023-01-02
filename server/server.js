@@ -13,7 +13,7 @@ const flash = require('express-flash')
 const session = require('express-session')
 const methodOveride = require('method-override')
 
-const initializePassport = require('.passport-config')
+const initializePassport = require('../views/passport-config') 
 initializePassport(passport, email => users.find(user => user.email === email),
      id => users.find(user => user.id === id)
 )

@@ -4,13 +4,13 @@ let quizContainer = document.getElementById("container");
 let nextBtn = document.getElementById("next-button");
 let countOfQuestion = document.querySelector(".number-of-question");
 let displayContainer = document.getElementById("display-container");
-let scoreContainer = document.querySelector(".score-container"); 
+let scoreContainer = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
-let userScore = document.getElementById("user-score");  
+let userScore = document.getElementById("user-score");
 let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
-let scoreCount = 0;  
+let scoreCount = 0;
 let count = 11;
 let countdown;
 const baseUrl = "http://localhost:4000";
@@ -27,7 +27,7 @@ restart.addEventListener("click", () => {
 });
 
 //Next Button
-nextBtn.addEventListener(
+nextBtn.addEventListener( 
   "click",
   (displayNext = () => {
     //increment questionCount
@@ -55,14 +55,14 @@ nextBtn.addEventListener(
 
 //Timer
 const timerDisplay = () => {
-    countdown = setInterval(() => {
-        count--;
-        timeLeft.innerHTML = `${count}s`;
-        if (count == 0) {
-            clearInterval(countdown);
-            displayNext();
-        }
-    }, 1000);
+  countdown = setInterval(() => {
+    count--;
+    timeLeft.innerHTML = `${count}s`;
+    if (count == 0) {
+      clearInterval(countdown);
+      displayNext();
+    }
+  }, 1000);
 };
 
 //Display quiz
@@ -78,6 +78,7 @@ const quizDisplay = (questionCount) => {
 
 //Quiz Creation
 function quizCreator() {
+  // console.log(quizArray)
   //randomly sort questions
   quizArray.sort(() => Math.random() - 0.5);
   //generate quiz
@@ -97,8 +98,10 @@ function quizCreator() {
     div.appendChild(question_DIV);
     //options
     div.innerHTML += `
-    <button class="option-div" onclick="checker(this)">${i.answers[0]}</button>
-     <button class="option-div" onclick="checker(this)">${i.answers[1]}</button>
+    <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
+     <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
+     <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
+     <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
     `;
     quizContainer.appendChild(div);
   }
@@ -147,9 +150,9 @@ function initial() {
 
 //when user click on start button
 startButton.addEventListener("click", () => {
-    startScreen.classList.add("hide");
-    displayContainer.classList.remove("hide");
-    initial();
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  initial();
 });
 
 //hide quiz and display start screen
@@ -159,13 +162,22 @@ window.onload = () => {
 };
 
 const getQuestions = () => {
-  axios.get(`${baseUrl}/api/quiz`).then((res) => {
-    quizArray = res.data;
-    console.log(res.data);
-    startScreen.classList.add("hide");
-    displayContainer.classList.remove("hide");
-    initial();
-  });
+  axios
+    .get(`${baseUrl}/api/quiz`)
+    .then((res) => {
+      quizArray = res.data;
+      console.log(quizArray);
+      startScreen.classList.add("hide");
+      displayContainer.classList.remove("hide");
+      initial();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };
+
+// const postQuestions = ()=>{
+//   axios.post(``)
+// }
 
 startButton.addEventListener("click", getQuestions);

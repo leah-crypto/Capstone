@@ -9,7 +9,7 @@ img {
 }
 
 body{
-    color: rgb(250, 106, 190)
+    color: #F13BD3(250, 106, 190)
 }
 
 #color{
@@ -25,8 +25,8 @@ body{
 }
 
 .buttons{
-    color: aquamarine;
-    text-decoration: pink;
+    color: #F13BD3;
+    text-decoration: #F13BD3;
     width: 100px;
     display: block;
     padding: 14px 28px;
@@ -45,7 +45,7 @@ body{
 }
 body {
   height: 100vh;
-  background: linear-gradient(184deg,#FABBBB,#FFE7F1);
+  background: linear-gradient(184deg, #F13BD3,#FFE7F1);
 }
 .start-screen,
 .score-container {
@@ -74,7 +74,7 @@ button {
   margin-top: 0.9em;
 }
 #display-container {
-  background-color: #ffffff;
+  background-color: white;
   padding: 3.1em 1.8em;
   width: 80%;
   max-width: 37.5em;

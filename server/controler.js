@@ -19,15 +19,11 @@ const quizArray = require("../db.json");
 // let newQuizArray = [];
 
 module.exports = {
-    // seed: (req, res) => {
-    //     sequelize
-    //     .query(
-
-    //     )
-    // },
+  
     getQuestions: (req, res) => {
-    
+      console.log(quizArray);
         res.status(200).send(quizArray);
-      }
-      
+      },
+
+          
 }

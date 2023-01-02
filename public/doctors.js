@@ -7,7 +7,7 @@ const baseURL = "/api/doctors";
 let doctorsArr;
 
 const getDoctorCards = () => axios.get(baseURL).then((res) => {
-    let { data: doctorsArr } = res; //array from backend data base???
+    let { data: doctorsArr } = res; 
     // console.log(res.data)
     displayDoctors(doctorsArr);
 }).catch((err) => console.log(err));
@@ -24,9 +24,7 @@ const createdCard = (doctorcard) => {
     const card = document.createElement("div");
     card.classList.add("doctors-card");
   
-    card.innerHTML = `<p class="flash-topic">${flashcard.topic}</p>
-            <p class="flash-answer">${flashcard.answer}</p>
-            <button   class="delete" onclick="deleteFlashcard(${flashcard.id})">Delete</button>
+    card.innerHTML = `
             `;
     cardListContainer.appendChild(card);
   };
@@ -54,6 +52,11 @@ const postDoctorsCards = (body) => {
 addDrBtn.addEventListener("click", showCardContainer)
 
 getDoctorCards();
+
+
+
+
+
 
 
 
