@@ -11,7 +11,7 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-let count = 11;
+let count = 9;
 let countdown;
 const baseUrl = "http://localhost:4000";
 
@@ -141,7 +141,7 @@ function initial() {
   quizContainer.innerHTML = "";
   questionCount = 0;
   scoreCount = 0;
-  count = 11;
+  count = 9;
   clearInterval(countdown);
   timerDisplay();
   quizCreator();

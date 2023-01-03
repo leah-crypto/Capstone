@@ -4,9 +4,9 @@ const baseUrl = "http://localhost:4000";
 let resourcesArray;
 
 resourcesBtn.addEventListener("click", () => {
-  startScreen.classList.add("hide");
-  displayContainer.classList.remove("hide");
-  initial();
+  resourcesArray.classList.add("hide");
+  resourcesArray.classList.remove("hide");
+ 
 });
 
 const getResources = () => {
