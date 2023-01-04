@@ -12,7 +12,7 @@ body{
     color: #F13BD3(250, 106, 190)
 }
 
-#color{
+/* #color{
     background-color:aquamarine;
 }
 
@@ -22,7 +22,7 @@ body{
 
 #ritual{
     background-color: aquamarine;
-}
+} */
 
 .buttons{
     color: #F13BD3;
@@ -69,6 +69,8 @@ button {
   padding: 0.5em 1.8em;
   border-radius: 0.2em;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+  background-color: #F13BD3;
+  color:white;
 }
 #restart {
   margin-top: 0.9em;

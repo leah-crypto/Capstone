@@ -1,6 +1,5 @@
 const addDrBtn = document.querySelector("#addCard");
-// const inputCardContain = document.querySelector(".create-box")
-// const layout = document.querySelector("create-box");
+// const delDrBtn = document.querySelector("#delCard");
 const cardListContainer = document.querySelector("#card-list-container");
 const baseURL = "http://localhost:4000/api/doctors";
 
@@ -8,12 +7,12 @@ let doctorsArr;
 
 const getDoctorCards = () => axios.get(baseURL).then((res) => {
     let { data: doctorsArr } = res; 
-    // console.log(res.data)
+    
     displayDoctors(doctorsArr);
 }).catch((err) => console.log(err));
 
 const displayDoctors = (doctorsArr) => {
-    // inputCardContain.textContent = "";
+    
     cardListContainer.innerHTML = "";
     for (let i = 0; i < doctorsArr.length; i++) {
         createdCard(doctorsArr[i]);
@@ -24,14 +23,12 @@ const displayDoctors = (doctorsArr) => {
 const createdCard = (doctorcard) => {
     const card = document.createElement("div");
     card.classList.add("create-box");
-    card.innerHTML = `<h4>Doctor Name: ${doctorcard.name}</h4>`
+    card.innerHTML = `<h4>Doctor Name: ${doctorcard.name}</h4>
+    <p>Phone Number: ${doctorcard.phone}</p>
+    <p>Date: ${doctorcard.date}</p>`
     cardListContainer.appendChild(card);
   };
 
-
-// const showInputCardContainer = () => {
-//     inputCardContain.classList.remove("hide");
-//   };
 
   const submitEventHadler = (event) => {
     event.preventDefault();
@@ -47,7 +44,7 @@ const createdCard = (doctorcard) => {
         phone: phone.value,
         date: date.value
       };
-      // inputCardContainer.classList.add("hide");
+     
       postDoctorsCards(cardObj);
   
       name.value = "";
@@ -66,9 +63,17 @@ const postDoctorsCards = (body) => {
     .catch((err) => console.log(err))
 }
 
+// const deleteDoctorscard = (id) =>
+//   axios
+//     .delete(`${baseURL}/${id}`)
+//     .then((res) => {
+//       getDoctorCards();
+//     })
+//     .catch((err) => console.log(err));
+
 
 addDrBtn.addEventListener("click", submitEventHadler);
-
+// delDrBtn.addEventListener("click", deleteDoctorscard);
 getDoctorCards();
 
 
