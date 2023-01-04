@@ -38,18 +38,22 @@ button:hover {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin: auto;
   padding: 20px 0;
   background-color: #ffb6c1;
+  align-items: flex-end;
+
+  /* position: relative; */
+ 
   
 }
 
 .nav button {
   font-family: inherit;
-    /* position: relative;
-    left: 1700px; */
+    position: relative;
+    /* left: 1700px; */
  
   /* display: flex;
   align-items: flex-end; */
@@ -125,9 +129,13 @@ button:hover {
   left: 1700px;
 }
 
-#headR {
+.headR {
   position: relative;
   left: 870px;
+  bottom: -60px;
+  /* position: relative;
+  top: -200px;
+  left: 550px; */
 }
 
 .btn-9 {
@@ -166,7 +174,7 @@ button:hover {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: rgb(27, 1, 1);
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;
@@ -182,3 +190,16 @@ button:hover {
 }
 
 
+#res{
+  right: 700px;
+}
+
+#qu{
+  right: 850px;
+}
+
+.headS{
+  position: relative;
+  top: -200px;
+  left: 550px;
+}

@@ -11,7 +11,7 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-let count = 9;
+let count = 11;
 let countdown;
 const baseUrl = "http://localhost:4000";
 
@@ -46,7 +46,7 @@ nextBtn.addEventListener(
         questionCount + 1 + " of " + quizArray.length + " Question";
       //display quiz
       quizDisplay(questionCount);
-      count = 9;
+      count = 11;
       clearInterval(countdown);
       timerDisplay();
     }
@@ -109,16 +109,19 @@ function quizCreator() {
 
 //Checker Function to check if option is correct or not
 function checker(userOption) {
+  
   let userSolution = userOption.innerText;
   let question =
     document.getElementsByClassName("container-mid")[questionCount];
   let options = question.querySelectorAll(".option-div");
-
+  console.log("hit!", quizArray[questionCount].correct[0])
   //if user clicked answer == correct option stored in object
-  if (userSolution === quizArray[questionCount].correct) {
+  if (userSolution === quizArray[questionCount].correct[0]) {
     userOption.classList.add("correct");
     scoreCount++;
+    console.log(scoreCount);
   } else {
+    console.log("hit2")
     userOption.classList.add("incorrect");
     //For marking the correct option
     options.forEach((element) => {
@@ -141,7 +144,7 @@ function initial() {
   quizContainer.innerHTML = "";
   questionCount = 0;
   scoreCount = 0;
-  count = 9;
+  count = 11;
   clearInterval(countdown);
   timerDisplay();
   quizCreator();

@@ -65,12 +65,11 @@ const postDoctorsCards = (body) => {
 
 // const deleteDoctorscard = (id) =>
 //   axios
-//     .delete(`${baseURL}/${id}`)
+//     .delete(`${baseURL}/${id}`) //think this may need to be drarray
 //     .then((res) => {
-//       getDoctorCards();
+//       getDoctorCards(doctorsArr);
 //     })
 //     .catch((err) => console.log(err));
-
 
 addDrBtn.addEventListener("click", submitEventHadler);
 // delDrBtn.addEventListener("click", deleteDoctorscard);

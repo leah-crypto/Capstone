@@ -19,7 +19,7 @@ module.exports = {
   },
 
   // deleteDoctors: (req, res) => {
-
+  //   res.status(200).send(drsArray)
   // },
 
   getResources: (req, res) => {

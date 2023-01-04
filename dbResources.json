@@ -9,5 +9,22 @@
     "id": 2,
     "name": "Breast Cancer Awareness Month: Behaviours to adopt to reduce your risk of breast cancer",
     "link":"https://youtu.be/7M0vGdczgMc"
+},
+
+{
+    "id": 3,
+    "name": "BRCA Gene Mutations and Breast Cancer Risk: What You Should Know",
+    "link": "https://www.youtube.com/watch?v=yIklIjOVllM"
+},
+
+{
+    "id": 4,
+    "name": "Komen Financial Assistance Program",
+    "link": "https://www.komen.org/support-resources/financial-assistance/"
+},
+{
+    "id": 5,
+    "name": "Charitable Resources for People Diagnosed with Breast Cancer",
+    "link": "https://www.breastcancer.org/managing-life/covering-cost-of-care/charitable-resources"
 }
 ]
