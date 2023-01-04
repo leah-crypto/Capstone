@@ -1,25 +1,25 @@
 const resourcesBtn = document.getElementById("resourcesBtn");
-const baseUrl = "http://localhost:4000/api/resources";
+const baseUrl = "http://localhost:4000";
 const cardListContainer = document.querySelector("#card-list-container");
 
 let resourcesArray;
 
-const hide = elem => {
-  let elem = resourcesArray;
-  elem.classList.add('hidden')
-}
+// const hide = elem => {
+//   let elem = resourcesArray;
+//   elem.classList.add('hidden')
+// }
 
-resourcesBtn.addEventListener("click", () => {
-  resourcesArray.classList.remove("hidden");
+// resourcesBtn.addEventListener("click", () => {
+//   resourcesArray.classList.remove("hidden");
  
-});
+// });
 
 
 const getResources = () => {
     axios.get(`${baseUrl}/api/resources`).then((res) => {
       resourcesArray = res.data;
-      // console.log(res.data);
-      startScreen.classList.add("hidden");
+      console.log(res.data);
+      displayResources(resourcesArray);
     });
   };
 
@@ -35,8 +35,8 @@ const createdCard = (resourcescard) => {
   const card = document.createElement("div");
   card.classList.add("create-box");
   card.innerHTML = `<h4>Title: ${resourcescard.name}</h4>
-  <p>Link: ${resourcescard.link}</p>`
+  <a href = "${resourcescard.link}">Press for video</a>`
   cardListContainer.appendChild(card);
 };
 
-resourcesBtn.addEvenListener("click", getResources);
+resourcesBtn.addEventListener("click", getResources);

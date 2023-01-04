@@ -6,6 +6,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const path = require('path')
+// const axios = require('axios')
 const bodyParse = require("body-parser")
 const bcrypt = require('bcrypt')
 const passport = require('passport')
@@ -26,6 +27,7 @@ const {
     getDoctorCards,
     getResources,
     postDoctors
+    // deleteDoctors
 } = require("./controler");
 
 // const passport = require('passport')
@@ -59,7 +61,7 @@ app.get(`/api/quiz`, getQuestions);
 app.get(`/api/doctors`, getDoctorCards);
 app.get(`/api/resources`, getResources);
 app.post(`/api/doctors`, postDoctors);
-
+// app.delete(`/api/doctors`, deleteDoctors);
 
 app.post('/register',checkNotAuthenticated, async (req, res) =>{
     try{

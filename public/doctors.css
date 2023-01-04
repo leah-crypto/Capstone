@@ -23,6 +23,7 @@ button {
   border: 1px solid lightgray;
   border-radius: 5px;
   background-color: #F7ECDE;
+  position: relative;
 }
 
 button:hover {
@@ -37,15 +38,21 @@ button:hover {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   margin: auto;
   padding: 20px 0;
   background-color: #ffb6c1;
+  
 }
 
 .nav button {
   font-family: inherit;
+    /* position: relative;
+    left: 1700px; */
+ 
+  /* display: flex;
+  align-items: flex-end; */
 }
 
 .create-box {
@@ -95,7 +102,6 @@ button:hover {
 
 .pinkRibbon{
   height: 300px;
-  
   right: 1700px;
   /* flex-direction: column;
   justify-content: flex-end; */
