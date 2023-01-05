@@ -22,7 +22,7 @@ button {
   cursor: pointer;
   border: 1px solid lightgray;
   border-radius: 5px;
-  background-color: #F7ECDE;
+  background-color: #f7ecde;
   position: relative;
 }
 
@@ -33,7 +33,6 @@ button:hover {
 .container {
   width: 95%;
   margin: auto;
-  
 }
 
 .nav {
@@ -43,18 +42,16 @@ button:hover {
   margin: auto;
   padding: 20px 0;
   background-color: #ffb6c1;
-  align-items: flex-end;
+  align-items: center;
 
   /* position: relative; */
- 
-  
 }
 
 .nav button {
   font-family: inherit;
-    position: relative;
-    /* left: 1700px; */
- 
+  position: relative;
+  /* left: 1700px; */
+
   /* display: flex;
   align-items: flex-end; */
 }
@@ -78,7 +75,7 @@ button:hover {
 
 .create-box button {
   width: fit-content;
-  background-color: #F7ECDE;
+  background-color: #f7ecde;
 }
 
 .cards {
@@ -104,7 +101,7 @@ button:hover {
   font-size: 1rem;
 }
 
-.pinkRibbon{
+.pinkRibbon {
   height: 300px;
   right: 1700px;
   /* flex-direction: column;
@@ -121,13 +118,13 @@ button:hover {
   border-radius: 5px;
   background-color: #ffb6c1;
   position: relative;
-  left: 650px;
+  left: 750px;
 }
 
-.nav2 button {
-  position: relative;
-  left: 1700px;
-}
+/* .nav2 button {
+  /* position: relative; */
+  /* right: 30px;
+} */ 
 
 .headR {
   position: relative;
@@ -171,6 +168,7 @@ button:hover {
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
+
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -189,17 +187,51 @@ button:hover {
   outline: none;
 }
 
-
-#res{
+#res {
   right: 700px;
 }
 
-#qu{
+#qu {
   right: 850px;
 }
 
-.headS{
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  position: relative;
+  /* flex-direction: column; */
+  top: 90px;
+  left: -30px;
+  /* left: 300px; */
+  
+}
+/* .headS {
   position: relative;
   top: -200px;
-  left: 550px;
+  left: 500px;
+} */
+
+/* #pr2 {
+  right: -10px;
 }
+
+#pr{
+  left: 100px;
+} */
+
+.nav2{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  background-color: #ffb6c1;
+  align-items: flex-end
+}
+
