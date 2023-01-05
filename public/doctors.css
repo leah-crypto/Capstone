@@ -43,17 +43,11 @@ button:hover {
   padding: 20px 0;
   background-color: #ffb6c1;
   align-items: center;
-
-  /* position: relative; */
 }
 
 .nav button {
   font-family: inherit;
   position: relative;
-  /* left: 1700px; */
-
-  /* display: flex;
-  align-items: flex-end; */
 }
 
 .create-box {
@@ -89,13 +83,6 @@ button:hover {
   padding: 0 10px;
 }
 
-/* .cards {
-  width: 370px;
-  height: 200px;
-  word-wrap: break-word;
-  margin: 10px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-} */
 
 .card h2 {
   font-size: 1rem;
@@ -104,8 +91,7 @@ button:hover {
 .pinkRibbon {
   height: 300px;
   right: 1700px;
-  /* flex-direction: column;
-  justify-content: flex-end; */
+
 }
 
 /*this is the start of resources*/
@@ -121,18 +107,13 @@ button:hover {
   left: 750px;
 }
 
-/* .nav2 button {
-  /* position: relative; */
-  /* right: 30px;
-} */ 
+
 
 .headR {
   position: relative;
   left: 870px;
   bottom: -60px;
-  /* position: relative;
-  top: -200px;
-  left: 550px; */
+
 }
 
 .btn-9 {
@@ -205,25 +186,13 @@ ul{
 
 li{
   position: relative;
-  /* flex-direction: column; */
+ 
   top: 90px;
   left: -30px;
-  /* left: 300px; */
+  
   
 }
-/* .headS {
-  position: relative;
-  top: -200px;
-  left: 500px;
-} */
 
-/* #pr2 {
-  right: -10px;
-}
-
-#pr{
-  left: 100px;
-} */
 
 .nav2{
   display: flex;
